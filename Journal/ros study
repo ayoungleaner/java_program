@@ -1,0 +1,45 @@
+ros study
+=============
+rescore
+节点对节点消息中间提供接收服务
+默认端口hostname:11311
+-------------
+catkin
+ROS的构建系统，由一系列CMake宏及定制的Python脚本组成
+
+工作区
+存放ROS代码，同时只能有一个生效。
+
+第一步，将ROS全局设置加入.bashrc：source /opt/ros/版本/setup.bash
+第二步，就可以创建一个catkin工作区域并初始化： 
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace（创建了CMakeLists.txt）
+创建了一个名叫catkin_ws的工作路径
+创建其他工作区文件：
+cd ~/catkin_ws
+catkin_make
+得到build和devel文件。build（使用C++）;devel，setup运行：
+source devel/setup.bash
+ROS工作区创建完毕，将需要的代码放入其中，作为程序包。
+（PS：重启打开终端需要执行source devel/setup.bash。如果只有一个工作区，将source ~/catkin_ws/devel/setup.bash加入.bashrc文件）
+--------------
+ros包
+
+在src路径内，每个包须有CMakeLists.txt和package.xml。
+创建一个包：cd ~/catkin_ws/src
+          catkin_create_pkg my_awesome_code rospy
+意为：进入src，调用catkin_create_pkg创建一个名为my_awesome_code的包依赖已经存在的rospy。（依赖关系在后）
+catkin_create_pkg创建同名文件夹，包含创建了CmakeList.txt，package.xml，src文件。
+--------------
+rosrun
+
+先运行：roscore
+再执行：rosrun package executable(args) 可执行包（参数）
+实例：1.rescore 2.rosrun rospy_tutorials talker 3.rosrun rospy_tutorials listener 
+talker 发出消息listener接收消息
+测试：打开新终端，打开可视化工具rqt_graph:rqt_graph 
+rosrun是用来单独启动节点
+--------------
+
+

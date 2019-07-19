@@ -1,0 +1,6 @@
+java .maven 错误提示
+Error: JAVA_HOME is not defined correctly.
+  We cannot execute /java/jdk1.8.0_211/bin/java
+
+  解决办法：export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+  

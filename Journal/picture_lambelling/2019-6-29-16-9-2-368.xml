@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Journal</folder>
+	<filename>2019-6-29-16-9-2-368.jpg</filename>
+	<path>/home/ubuntu/xgf_wx/Journal/2019-6-29-16-9-2-368.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>stb400_6cm</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>315</xmin>
+			<ymin>314</ymin>
+			<xmax>408</xmax>
+			<ymax>407</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,13 @@
+#eclipse 配置javacv开发环境
+##先下载jdk1.7以上
+##然后下载javacv，地址https://github.com/bytedeco/javacv/
+##需要下载javacv-platform-1.4-bin.zip(或1.5版本的)
+##解压
+##打开eclipse，创建一个项目
+##右键项目，选择properties,选中Java Build Path,
+  再点击右侧Add External JARS
+##选择解压后javacv-bin包中的javacpp.jar,javacv,jar,opencv.jar,
+  opencv-linux-x86.jar.根据自己电脑所需选择。点击OK。
+
+
+  ps:安装的的bin包要与javacv包版本符合。

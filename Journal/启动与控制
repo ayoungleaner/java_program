@@ -1,0 +1,33 @@
+启动400ros
+输入：source ~/tz1venv3/bin/activate
+	cd stbnew
+	cd STB
+	source setup.sh
+	cd src/core/scara
+	jupyter notebook 
+	-----------
+	source ~/tz1venv3/bin/activate
+	cd stbnew
+	cd STB
+	source setup.sh
+	cd ..
+	cd ..
+	cd aixgf/ros400
+	jupyter notebook --ip=0.0.0.0
+输入网址：http://192.168.88.102:8888
+	password
+	caputevideo
+	arm0524
+------------
+启动视觉
+指令：source ~/od.sh
+   source ~/cuda.sh
+   source ~/tensorflowvenv3/bin/activate
+   cd ~/Ai/cloud2019/tensorflow-object-detection-example
+   export video=3
+   python beltfollow.py
+-------------
+传文件
+scp -r xxxx.xxx ubuntu@192.168.88.104:/home/ubuntu/XXXXX
+
+

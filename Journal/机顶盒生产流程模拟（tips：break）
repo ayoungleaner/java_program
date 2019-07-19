@@ -1,0 +1,23 @@
+机顶盒生产流程模拟（tips：break）
+=======
+流程，开启机械臂，移动到制定位置，抓取机顶盒，移动机械臂，释放机顶盒，计数+1。
+需要物体：机械臂，机顶盒。
+-------
+机顶盒：
+构造方法
+属性：类别，编号，完成值true(flase)，位置信息（判断抓取）
+机械臂：
+构造方法
+属性：编号
+方法：开启，位移1,位移2,抓取，释放，停止。
+
+tips:for(int i=0;i<++i;){}一直循环，可以用break来跳出循环。
+
+break:完全跳出一个循环。同时可以用break outer结束外层循环。
+continue：终止本次一次循环，通常用if判断中continue;
+return：结束该方法，循环也会随之结束。不管有多少层循环。
+>
+随机生成boolean值:
+Random random=new Random();
+		boolean blnRand=random.nextBoolean();
+		System.out.println(blnRand);

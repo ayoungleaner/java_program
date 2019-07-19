@@ -1,0 +1,4 @@
+启动labellmg：
+source ~/labelimgvenv3/bin/activate
+cd labelImg
+python labelImg.py

@@ -1,0 +1,5 @@
+400ROS启动
+1.source ~/tz1venv3/bin/activate
+2.source ~/stbnew/STB/setup.sh
+3.cd ~/aixgf/ros400
+4.jupyter notebook --ip=0.0.0.0

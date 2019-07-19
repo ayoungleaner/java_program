@@ -1,0 +1,64 @@
+some java 
+======
+url:https://www.runoob.com/java/java-url-processing.html
+------
+异常https://www.runoob.com/java/java-exceptions.html
+------
+获取时间：
+long startTime=System.currentTimeMillis();//毫秒级，纳秒是nanoTime()
+.....
+long endTime=System.currentTimeMillis();
+------
+反射:动态获取对象信息和调用对象的方法
+三种方法
+1.test t= new test();
+class c=t.getClass();
+System.out.println(c.getName());
+2.Class c=Test.class;
+System.out.println(c.getName());
+3.try{
+	Class c= Class.forName("com.Tset");//全路径名获取
+	System.out.println(c.getName());
+}catch(ClassNotFoundException){
+	e.printStackTrace();
+}
+--------------------------------------
+打开intelij idea
+进入bin目录后 ./idea.sh
+--------------------------------------
+tuple/元组创建
+Unit<A> (1 element)
+
+Pair<A,B> (2 elements)
+
+Triplet<A,B,C> (3 elements)
+
+Quartet<A,B,C,D> (4 elements)
+
+Quintet<A,B,C,D,E> (5 elements)
+
+Sextet<A,B,C,D,E,F> (6 elements)
+
+Septet<A,B,C,D,E,F,G> (7 elements)
+
+Octet<A,B,C,D,E,F,G,H> (8 elements)
+
+Ennead<A,B,C,D,E,F,G,H,I> (9 elements)
+
+Decade<A,B,C,D,E,F,G,H,I,J> (10 elements)
+-------------------------
+保留2位小数
+Double dou = 3000.533
+dou = (double)Math.round(dou*100)/100
+其中dou是变量，很简单吧，我们大多数人都知道Math.round()方法，可是我却没想到保留两位小数就是先乘以100再除以100.
+同理保留N位小数就不用说了吧
+二、第二种方法
+double d = 111231.5585; 
+BigDecimal b = new BigDecimal(f); 
+double df = b.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+三、第三种方法
+double a=10000;//要用double型，要不a/b永远得0; 
+double b=20000; 
+NumberFormat nbf=NumberFormat.getInstance(); 
+nbf.setMinimumFractionDigits(2); 
+

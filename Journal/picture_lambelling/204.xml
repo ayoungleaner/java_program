@@ -1,0 +1,26 @@
+<annotation>
+	<folder>belt_output2019062901</folder>
+	<filename>204.jpg</filename>
+	<path>/home/ubuntu/dataxgf/machinevision/data/belt_output2019062901/204.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>stb400_5cm</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>30</xmin>
+			<ymin>349</ymin>
+			<xmax>155</xmax>
+			<ymax>474</ymax>
+		</bndbox>
+	</object>
+</annotation>

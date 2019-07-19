@@ -1,0 +1,14 @@
+#python操作机器人指令
+##s.moveXY(400.0,true)//移动XY
+##s.switchManual(True)//手动模式（正解逆解），False
+##s.moveAxis(s.axis_r,90)//r轴旋转90
+##s.switchGripper(True,0.1)//抓手旋转轴模式
+##start=time.time()//赋值时间给start
+##s.speed(100)//速度设置为100
+
+=========
+查看摄像头
+ls /dev/v*
+========
+import time
+start=time.time()

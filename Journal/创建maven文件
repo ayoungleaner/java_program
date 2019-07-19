@@ -1,0 +1,11 @@
+创建maven文件
+（由于eclipse无法创建maven，所以用命令行创建，已安装maven，并配置环境，后续看是否能导入eclipse）
+ mvn archetype:generate -DgroupId=com.xgf.robot.wx -DartifactId=stb_performance -DarchetypeArtifactId=maven-archetype-quickstart
+
+ archetype：generate  创建项目
+ -DgroupId=com.xgf.robot.wx  包名，一般是域名反写
+ -DartifactId=stb_performance  项目名称
+ -DarchetypeArtifactId=maven-archetype-quickstart
+
+ 中间遇到需要输入直接回车，直到出现build success。
+ 
